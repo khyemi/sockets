@@ -4,8 +4,10 @@ import sys
 # create a socket
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 print 'Socket created'
+
 # define BUffer Size
 buf = 256
+
 # bind the socket to the port
 address = (socket.gethostname(), int(sys.argv[1]))
 print >>sys.stderr, 'IP address: %s port: %s' % address
