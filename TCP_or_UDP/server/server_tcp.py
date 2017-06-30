@@ -12,7 +12,6 @@ class msg_t:
 		self.payload = payload
 
 # Create a TCP/IP socket
-
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 # Bind the socket to the port
@@ -23,7 +22,7 @@ sock.bind(server_address)
 # define BUffer Size
 BUF_SZ = 1024
 
-# Listen for incoming connections
+
 sock.listen(1)
 
 while True:
