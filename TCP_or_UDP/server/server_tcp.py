@@ -22,7 +22,7 @@ sock.bind(server_address)
 # define BUffer Size
 BUF_SZ = 1024
 
-
+# Listen for incoming connections
 sock.listen(1)
 
 while True:
