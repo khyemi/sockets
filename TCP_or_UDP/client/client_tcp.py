@@ -9,6 +9,7 @@ import pickle
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 # Connect the socket to the port where the server is listening
+
 server_address = (str(sys.argv[1]), int(sys.argv[2]))
 print >>sys.stderr, 'connecting to %s port %s' % server_address
 sock.connect(server_address)
